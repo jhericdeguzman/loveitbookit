@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home | Frontend Template</title>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- <link rel="preload" href="fonts/OoohBaby-Regular.woff2" as="font" type="font/woff2" fetchpriority="Highest"> -->
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,300;1,6..12,400&family=Oooh+Baby&display=swap"
+            rel="preload"
+            as="style"
+            crossorigin
+        />
+
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,300;1,6..12,400&family=Oooh+Baby&display=swap" rel="stylesheet" crossorigin>
+
+        <link rel="preload" href="https://fonts.gstatic.com/s/ooohbaby/v4/2sDcZGJWgJTT2Jf76xQzaGW5.woff2" as="font" type="font/woff2" crossorigin>
+
+        <link rel="preload" href="https://fonts.gstatic.com/s/nunitosans/v15/pe0AMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfUVwoNnq4CLz0_kJ3xzA.woff2" as="font" type="font/woff2" crossorigin> -->
+
+
+    <!-- Dev-related stylesheets. -->
+    <!--  -->
+
+
+    <link rel="stylesheet" href="/css/above-the-fold.css">
+
+    <link rel="preload" as="style" href="/css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="stylesheet" href="/css/itinerary.css">
+
+    <link rel="stylesheet" href="/css/booking-journey.css">
+
+    <link rel="stylesheet" href="/css/quote.css">
+
+    <!-- <link rel="preload" fetchpriority="high" as="image" href="https://dev.loveitbookit.com/media/ujfeo4l2/hero-blog.webp?width=300" type="image/webp"> -->
+
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" fetchpriority="low" onload="this.rel='stylesheet'">
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.10/dist/sweetalert2.min.css" fetchpriority="low" onload="this.rel='stylesheet'">
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/react-range-slider-input@3.0.7/dist/style.min.css" fetchpriority="low" onload="this.rel='stylesheet'">
+
+</head>
+
+<body class="homepage">
+    <div class="mainHeader__burger burger" role="button"><span></span></div>
+    <div class="topMenu">
+        <div class="topMenu__left">
+            <p>Fully ATOL Protected</p>
+        </div>
+
+        <a href="#feefo-service-review-carousel-widgetId" class="siteRating" title="4.9/5 on Feefo from over 1,000 reviews">
+            <svg role="img" aria-label="star">
+                <use xlink:href="images/sprites/sprite.svg#star-filled" />
+            </svg>
+            <svg role="img" aria-label="star">
+                <use xlink:href="images/sprites/sprite.svg#star-filled" />
+            </svg>
+            <svg role="img" aria-label="star">
+                <use xlink:href="images/sprites/sprite.svg#star-filled" />
+            </svg>
+            <svg role="img" aria-label="star">
+                <use xlink:href="images/sprites/sprite.svg#star-filled" />
+            </svg>
+            <svg role="img" aria-label="star">
+                <use xlink:href="images/sprites/sprite.svg#star-filled" />
+            </svg>
+            <span>Customer Rating</span>
+        </a>
+
+        <div class="topMenu__right">
+            <button class="iconBtn shortlist" data-modal-target="#shortlistModal">
+                <svg role="img" aria-label="heart">
+                    <use xlink:href="images/sprites/sprite.svg#heart" />
+                </svg>
+                Shortlist
+                <span class="slbadge">0</span>
+            </button>
+
+            <a href="/manage-booking-react.html" class="iconBtn login">
+                <svg role="img" aria-label="user">
+                    <use xlink:href="images/sprites/sprite.svg#user" />
+                </svg>
+                <span>Login</span>
+            </a>
+        </div>
+    </div>
+
+    <header class="mainHeader">
+        <div></div>
+
+        <div class="mainHeader__nav">
+            <div class="mainHeader__logo">
+                <a href="/home.html">
+                    <svg role="img" aria-label="loveitbookit" class="logo">
+                        <use xlink:href="images/sprites/sprite.svg#loveitbookit" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="mainHeader__contact">
+            <!-- <span class="shift open">Call to book We're open</span> -->
+            <span class="shiftloader"></span>
+
+            <a href="tel:0203 393 1003" class="phoneNumber">
+                <svg role="img" aria-label="phone" class="phone">
+                    <use xlink:href="images/sprites/sprite.svg#phone" />
+                </svg>
+                0203 393 1003
+            </a>
+
+            <div class="headerContact">
+                <p class="h4">Opening times</p>
+
+                <dl>
+                    <dt>Sales</dt>
+                    <dd><span>Monday to Friday:</span> <time>7am-8pm</time></dd>
+                    <dd><span>Saturday & Sunday:</span> <time>7am-6pm</time></dd>
+                    <dt>Customer services</dt>
+                    <dd><span>Monday to Friday:</span> <time>7am-8pm</time></dd>
+                    <dd><span>Saturday & Sunday:</span> <time>7am-6pm</time></dd>
+                </dl>
+
+                <button class="button slim" data-modal-target="#enquireFormModal">
+                    Enquire now
+                </button>
+                <a href="#" class="button slim secondary">FAQ's</a>
+            </div>
+        </div>
+
+        <div class="mainHeader__contactCompact">
+            <button class="phoneButton">
+                <svg role="img" aria-label="phone" class="phone">
+                    <use xlink:href="images/sprites/sprite.svg#phone" />
+                </svg>
+            </button>
+
+            <div class="headerContactCompact">
+                <button class="closeButton">
+                    <svg role="img" aria-label="close" class="close">
+                        <use xlink:href="images/sprites/sprite.svg#close" />
+                    </svg>
+                </button>
+
+                <p class="h4">LET US INSPIRE YOU..</p>
+                <p>Speak to one of our experts</p>
+
+                <a href="tel:0203 393 1003">
+                    <svg role="img" aria-label="phone" class="icon">
+                        <use xlink:href="images/sprites/sprite.svg#phone" />
+                    </svg>
+                    <span>CALL US</span>
+                    <strong>0203 393 1003</strong>
+                    <div class="badgeOc">Closed</div>
+                </a>
+
+                <button class="enquire" data-modal-target="#enquireFormModal">
+                    <svg role="img" aria-label="mail" class="icon">
+                        <use xlink:href="images/sprites/sprite.svg#mail" />
+                    </svg>
+                    <span>CONTACT US</span>
+                    <strong>ENQUIRE ONLINE</strong>
+                </button>
+            </div>
+        </div>
+
+        <div class="menuBar" id="mainMenuBar">
+            <ul class="mainHeader__menu left">
+                <li><a href="#">TV Deals</a></li>
+                <li><a href="#">Cruise Packages</a></li>
+            </ul>
+
+            <ul class="mainHeader__menu right">
+                <li class="hasSubMenu"><a href="#">Cruise Lines</a></li>
+                <li class="hasSubMenu"><a href="#">Destinations</a></li>
+                <li class="hasSubMenu"><a href="#">Inspiration</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <nav class="mainNavigation">
+        <div class="mainNavigation__menu">
+            <div class="mainNavigation__title">
+                <span>Main menu</span>
+            </div>
+
+            <ul class="mainNavigation__list">
+                <li><a class="item" href="#">TV deals</a></li>
+
+                <li><a class="item" href="#">Cruise packages</a></li>
+
+                <li class="hasSubMenu">
+                    <span class="item" role="button">
+          <span>Destinations</span>
+
+                    <svg role="img" aria-label="arrow-right" class="arrow">
+                        <use xlink:href="images/sprites/sprite.svg#chevron-down" />
+                    </svg>
+                    </span>
+
+                    <div class="mainNavigation__menu">
+                        <div class="mainNavigation__title">
+                            <svg role="img" aria-label="arrow-left" class="back">
+                                <use xlink:href="images/sprites/sprite.svg#chevron-down" />
+                            </svg>
+
+                            <span>Destinations</span>
+                        </div>
+
+                        <ul class="mainNavigation__list">
+                            <li><a href="#" class="item">View all</a></li>
+                            <li><a href="#" class="item">Popular destinations</a></li>
+
+                            <li class="hasSubMenu">
+                                <span class="item" role="button">
+                <span>Lorem ipsum 2</span>
+                                <svg role="img" aria-label="arrow-right" class="arrow">
+                                    <use xlink:href="images/sprites/sprite.svg#chevron-down" />
+                                </svg>
+                                </span>
+
+                                <div class="mainNavigation__menu">
+                                    <div class="mainNavigation__title">
+                                        <svg role="img" aria-label="arrow-left" class="back">
+                                            <use xlink:href="images/sprites/sprite.svg#chevron-down" />
+                                        </svg>
+
+                                        <span>Lorem ipsum 2</span>
+                                    </div>
+
+                                    <ul class="mainNavigation__list">
+                                        <li><a href="#" class="item">Lorem ipsum</a></li>
+                                        <li><a href="#" class="item">Lorem ipsum</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a class="item" href="#">Inspiration</a></li>
+
+                <li class="mainNavigation__contact">
+                    <span>TALK TO OUR CRUISE EXPERTS</span>
+                    <a href="tel:0203 393 1003" class="tel">
+                        <svg role="img" aria-label="phone">
+                            <use xlink:href="images/sprites/sprite.svg#phone" />
+                        </svg>
+                        0203 393 1003
+                    </a>
+                    <div class="wereopen">
+                        We're
+                        <div class="badgeOc">Closed</div>
+                    </div>
+                    <button class="button cta" data-modal-target="#enquireFormModal">
+                        ENQUIRE NOW
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <main class="main">
+
+        <section class="hero">
+            <!-- <div
+    class="owl-carousel owl-theme hero__carousel owl-loaded lazy"
+    data-lazy-function="heroCarousel"
+  >
+    <div class="hero__item text-left">
+      <div class="hero__bg owl-lazy" data-src="images/new-zealand.webp"></div>
+
+      <div class="container">
+        <div class="hero__content">
+          <h1>11 NIGHT NEW ZEALAND CRUISE</h1>
+
+          <p>
+            From <em>&#163;1,567</em> per person<br />
+            4th February 2024 | More dates available<br />
+            11 Nights | Celebrity Edge<br />
+            <span>Cruise only</span>
+          </p>
+
+          <a href="#" class="button cta">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__item">
+      <div class="hero__bg owl-lazy" data-src="images/norway-cruises.jpg"></div>
+
+      <div class="container">
+        <div class="hero__content">
+          <h1>Your perfect cruise awaits...</h1>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+            <div class="hero__item">
+                <div class="hero__bg">
+                    <img srcset="
+          https://media.loveitbookit.com/media/nfiht5iv/shutterstock_570470086-aruba.jpeg?width=430&height=1000  768w,
+          https://media.loveitbookit.com/media/nfiht5iv/shutterstock_570470086-aruba.jpeg?width=1920&height=700 1000w
+        " src="https://media.loveitbookit.com/media/nfiht5iv/shutterstock_570470086-aruba.jpeg?width=430&height=1000" class="bgimage" width="1920" height="700" alt="" fetchpriority="high" />
+
+                    <!-- <img
+        src="images/mediterranean-cruises.jpg"
+        class="bgimage"
+        onload="this.onload=null;this.src='images/404.jpg'"
+        width="1920"
+        height="700"
+        alt=""
+      /> -->
+                    <!-- <div
+        class="bg lazy"
+        data-bg="images/404.jpg"
+      ></div>
+      <div
+        style="background-image: url(images/mediterranean-cruises.jpg)"
+        class="bgMobile lazy"
+        data-bg="images/404.jpg"
+      ></div> -->
+
+                    <!-- <video
+        preload="auto"
+        src="https://vz-e0e9976b-d9c.b-cdn.net/1a737795-df44-4e62-a3ca-91d7656fe03f/play_720p.mp4"
+        autoplay
+        loop
+        playsinline
+        muted
+      ></video> -->
+                </div>
+
+                <div class="container">
+                    <div class="hero__content">
+                        <h1>Your perfect cruise awaits...</h1>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="search">
+                <div class="search__wrapper">
+                    <script>
+                        var globalSearchOptions = {
+                            destination: [{
+                                    label: 'Asia',
+                                    value: 'asia',
+                                },
+                                {
+                                    label: 'Destination Item 1',
+                                    value: 'Item_1',
+                                },
+                                {
+                                    label: 'Caribbean',
+                                    value: 'caribbean',
+                                },
+                                {
+                                    label: 'Mediterranean',
+                                    value: 'mediterranean',
+                                },
+                            ],
+                            country: [{
+                                    label: 'Australia',
+                                    value: 'australia',
+                                },
+                                {
+                                    label: 'Country 2',
+                                    value: 'c2',
+                                },
+                            ],
+                            popularCruiseline: [{
+                                    label: 'Azamara',
+                                    value: '1146'
+                                },
+                                {
+                                    label: 'Carnival Cruise Line',
+                                    value: '3558'
+                                },
+                                {
+                                    label: 'Celebrity Cruises',
+                                    value: '1295'
+                                },
+                                {
+                                    label: 'Cunard Line',
+                                    value: '3795'
+                                },
+                                {
+                                    label: 'Explora Journeys',
+                                    value: '2671'
+                                },
+                                {
+                                    label: 'Holland America Line',
+                                    value: '3309'
+                                },
+                                {
+                                    label: 'MSC Cruises',
+                                    value: '4685'
+                                },
+                                {
+                                    label: 'Norwegian Cruise Line',
+                                    value: '2313'
+                                },
+                                {
+                                    label: 'Princess Cruises',
+                                    value: '3888'
+                                },
+                                {
+                                    label: 'Royal Caribbean International',
+                                    value: '4205'
+                                },
+                                {
+                                    label: 'Seabourn',
+                                    value: '3970'
+                                },
+                                {
+                                    label: 'Silversea',
+                                    value: '3192'
+                                },
+                            ],
+                            cruiseline: [{
+                                    label: 'Azamara',
+                                    value: '1146'
+                                },
+                                {
+                                    label: 'Carnival Cruise Line',
+                                    value: '3558'
+                                },
+                                {
+                                    label: 'Celebrity Cruises',
+                                    value: '1295'
+                                },
+                                {
+                                    label: 'Cunard Line',
+                                    value: '3795'
+                                },
+                                {
+                                    label: 'Explora Journeys',
+                                    value: '2671'
+                                },
+                                {
+                                    label: 'Holland America Line',
+                                    value: '3309'
+                                },
+                                {
+                                    label: 'MSC Cruises',
+                                    value: '4685'
+                                },
+                                {
+                                    label: 'Norwegian Cruise Line',
+                                    value: '2313'
+                                },
+                                {
+                                    label: 'Princess Cruises',
+                                    value: '3888'
+                                },
+                                {
+                                    label: 'Royal Caribbean International',
+                                    value: '4205'
+                                },
+                                {
+                                    label: 'Seabourn',
+                                    value: '3970'
+                                },
+                                {
+                                    label: 'Silversea',
+                                    value: '3192'
+                                },
+                            ],
+                            popularCruiseship: [{
+                                    label: 'Allure of the Seas',
+                                    value: '4572'
+                                },
+                                {
+                                    label: 'Azamara Journey',
+                                    value: '1220'
+                                },
+                                {
+                                    label: 'Azamara Onward',
+                                    value: '5417'
+                                },
+                                {
+                                    label: 'Carnival Breeze',
+                                    value: '3791'
+                                },
+                                {
+                                    label: 'Celebrity Apex',
+                                    value: '5186'
+                                },
+                                {
+                                    label: 'Celebrity Beyond',
+                                    value: '3884'
+                                },
+                                {
+                                    label: 'Celebrity Edge',
+                                    value: '3532'
+                                },
+                                {
+                                    label: 'Explora I',
+                                    value: '2942'
+                                },
+                                {
+                                    label: 'Icon of the Seas',
+                                    value: '5307'
+                                },
+                                {
+                                    label: 'MSC Virtuosa',
+                                    value: '4903'
+                                },
+                                {
+                                    label: 'Norwegian Prima',
+                                    value: '3883'
+                                },
+                                {
+                                    label: 'Norwegian Sky',
+                                    value: '3112'
+                                },
+                                {
+                                    label: 'Queen Mary 2',
+                                    value: '3864'
+                                },
+                                {
+                                    label: 'Rotterdam',
+                                    value: '3363'
+                                },
+                                {
+                                    label: 'Seabourn Encore',
+                                    value: '4184'
+                                },
+                                {
+                                    label: 'Seabourn Quest',
+                                    value: '4029'
+                                },
+                                {
+                                    label: 'Silver Dawn',
+                                    value: '3278'
+                                },
+                                {
+                                    label: 'Sky Princess',
+                                    value: '3959'
+                                },
+                                {
+                                    label: 'Wonder of the Seas',
+                                    value: '4431'
+                                },
+                                {
+                                    label: 'Zuiderdam',
+                                    value: '3469'
+                                },
+                            ],
+                            cruiseship: [{
+                                    label: 'Allure of the Seas',
+                                    value: '4572'
+                                },
+                                {
+                                    label: 'Azamara Journey',
+                                    value: '1220'
+                                },
+                                {
+                                    label: 'Azamara Onward',
+                                    value: '5417'
+                                },
+                                {
+                                    label: 'Carnival Breeze',
+                                    value: '3791'
+                                },
+                                {
+                                    label: 'Celebrity Apex',
+                                    value: '5186'
+                                },
+                                {
+                                    label: 'Celebrity Beyond',
+                                    value: '3884'
+                                },
+                                {
+                                    label: 'Celebrity Edge',
+                                    value: '3532'
+                                },
+                                {
+                                    label: 'Explora I',
+                                    value: '2942'
+                                },
+                                {
+                                    label: 'Icon of the Seas',
+                                    value: '5307'
+                                },
+                                {
+                                    label: 'MSC Virtuosa',
+                                    value: '4903'
+                                },
+                                {
+                                    label: 'Norwegian Prima',
+                                    value: '3883'
+                                },
+                                {
+                                    label: 'Norwegian Sky',
+                                    value: '3112'
+                                },
+                                {
+                                    label: 'Queen Mary 2',
+                                    value: '3864'
+                                },
+                                {
+                                    label: 'Rotterdam',
+                                    value: '3363'
+                                },
+                                {
+                                    label: 'Seabourn Encore',
+                                    value: '4184'
+                                },
+                                {
+                                    label: 'Seabourn Quest',
+                                    value: '4029'
+                                },
+                                {
+                                    label: 'Silver Dawn',
+                                    value: '3278'
+                                },
+                                {
+                                    label: 'Sky Princess',
+                                    value: '3959'
+                                },
+                                {
+                                    label: 'Wonder of the Seas',
+                                    value: '4431'
+                                },
+                                {
+                                    label: 'Zuiderdam',
+                                    value: '3469'
+                                },
+                            ],
+                            duration: [{
+                                    label: 'Any length',
+                                    value: 'any',
+                                },
+                                {
+                                    label: '1-5 days',
+                                    value: '1-5',
+                                },
+                                {
+                                    label: '6-8 days',
+                                    value: '6-8',
+                                },
+                                {
+                                    label: '9-14 days',
+                                    value: '9-14',
+                                },
+                                {
+                                    label: '15+ days',
+                                    value: '15',
+                                },
+                            ],
+                        };
+                    </script>
+
+                    <div class="mainSearch">
+                        <div class="mainSearch__wrapper">
+                            <div class="mainSearch__headline">
+                                SEARCH
+                                <button class="mainSearch__close" id="closeMainSearchButton">
+                                    <svg role="img" aria-label="close">
+                                        <use xlink:href="images/sprites/sprite.svg#close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <h2 class="mainSearch__subHeadline">Find your cruise</h2>
+
+                            <div class="inner">
+                                <div class="input-column" id="searchLookingFor">
+                                    <svg role="img" aria-label="marker" class="column-icon">
+                                        <use xlink:href="images/sprites/sprite.svg#marker"></use>
+                                    </svg>
+                                    <span class="label">Looking for</span>
+                                    <span class="selectedInputs destination">Destination or Port</span>
+                                    <button class="clearInput clearCruiseName">
+                                        <svg role="img" aria-label="close">
+                                            <use xlink:href="images/sprites/sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+
+                                    <div class="searchOptions">
+                                        <div class="mainSearch__headline">
+                                            GOING TO
+                                            <button class="mainSearch__close">
+                                                <svg role="img" aria-label="close">
+                                                    <use xlink:href="images/sprites/sprite.svg#close"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="searchOptions__input">
+                                            <span>
+              <svg role="img" aria-label="marker">
+                <use xlink:href="images/sprites/sprite.svg#marker"></use>
+              </svg>
+            </span>
+                                            <input type="text" placeholder="Destination, Port or Cruise Name" id="searchDestinationAndPortInput" />
+                                            <button class="clearInput">
+                                                <svg role="img" aria-label="close">
+                                                    <use xlink:href="images/sprites/sprite.svg#close"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="searchOptions__body">
+                                            <ul class="searchOptions__selectedPills"></ul>
+
+                                            <div class="searchOptions__tab tab3 searchOptions__destinationAndPort">
+                                                <h5>Regions</h5>
+
+                                                <div class="list destination"></div>
+
+                                                <h5>Countries</h5>
+
+                                                <div class="list country"></div>
+
+                                                <h5>Ports</h5>
+
+                                                <div class="list port"></div>
+
+                                                <h5>Cruises</h5>
+
+                                                <div class="list cruisename"></div>
+
+                                                <p class="nomatch">No matches found</p>
+                                            </div>
+
+                                            <div class="searchOptions__tabs">
+                                                <ul>
+                                                    <li class="active" data-target="tab1">Region</li>
+                                                    <li data-target="tab2">Country</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="searchOptions__tab tab1 active searchOptions__destination">
+                                                <h5>Popular Regions</h5>
+
+                                                <div class="list"></div>
+                                            </div>
+
+                                            <div class="searchOptions__tab tab2 searchOptions__country">
+                                                <h5>Popular Countries</h5>
+
+                                                <div class="list"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="searchOptions__buttons">
+                                            <button class="button clear slim">Clear</button>
+                                            <button class="button slim apply">Apply</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ============================================================ -->
+
+                                <div class="input-column" id="searchCruiselineOrShip">
+                                    <svg role="img" aria-label="ship" class="column-icon">
+                                        <use xlink:href="images/sprites/sprite.svg#ship"></use>
+                                    </svg>
+                                    <span class="label">Cruise Line / Ship</span>
+                                    <span class="selectedInputs">Any</span>
+
+                                    <div class="searchOptions">
+                                        <div class="mainSearch__headline">
+                                            CRUISE ON
+                                            <button class="mainSearch__close">
+                                                <svg role="img" aria-label="close">
+                                                    <use xlink:href="images/sprites/sprite.svg#close"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="searchOptions__input">
+                                            <span>
+              <svg role="img" aria-label="ship">
+                <use xlink:href="images/sprites/sprite.svg#ship"></use>
+              </svg>
+            </span>
+                                            <input type="text" id="searchShipAndLineInput" placeholder="Cruise Line or Ship" />
+                                            <button class="clearInput">
+                                                <svg role="img" aria-label="close">
+                                                    <use xlink:href="images/sprites/sprite.svg#close"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="searchOptions__body">
+                                            <ul class="searchOptions__selectedPills"></ul>
+
+                                            <div class="searchOptions__tab tab3 searchOptions__linesAndShips">
+                                                <h5>Cruise Lines</h5>
+
+                                                <div class="list cruiseline"></div>
+
+                                                <h5>Cruise Ships</h5>
+
+                                                <div class="list cruiseship"></div>
+
+                                                <p class="nomatch">No matches found</p>
+                                            </div>
+
+                                            <div class="searchOptions__tabs">
+                                                <ul>
+                                                    <li class="active" data-target="tab1">Cruise Line</li>
+                                                    <li data-target="tab2">Ship Name</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="searchOptions__tab tab1 active searchOptions__cruiseline">
+                                                <h5>Popular Cruise Lines</h5>
+
+                                                <div class="list"></div>
+                                            </div>
+
+                                            <div class="searchOptions__tab tab2 searchOptions__cruiseship">
+                                                <h5>Popular Ships</h5>
+
+                                                <div class="list"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="searchOptions__buttons">
+                                            <button class="button clear slim">Clear</button>
+                                            <button class="button slim apply">Apply</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ============================================================ -->
+
+                                <div class="input-column" id="searchDeparture">
+                                    <svg role="img" aria-label="calendar" class="column-icon">
+                                        <use xlink:href="images/sprites/sprite.svg#calendar"></use>
+                                    </svg>
+                                    <span class="label">Departure Date</span>
+                                    <span class="selectedInputs">Any Date</span>
+
+                                    <div class="searchOptions">
+                                        <div class="mainSearch__headline">
+                                            WHEN
+                                            <button class="mainSearch__close">
+                                                <svg role="img" aria-label="close">
+                                                    <use xlink:href="images/sprites/sprite.svg#close"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="searchOptions__input">
+                                            <span>
+              <svg role="img" aria-label="calendar">
+                <use xlink:href="images/sprites/sprite.svg#calendar"></use>
+              </svg>
+            </span>
+                                            <input type="text" placeholder="Select departure date" readonly />
+                                        </div>
+
+                                        <div class="searchOptions__body">
+                                            <div class="searchOptions__tab active searchOptions__departure">
+                                                <div class="libi-datepicker" data-maxyear="2028-07-13">
+                                                    <div class="mrp"></div>
+
+                                                    <div class="drp hidden">
+                                                        <input type="hidden" id="lightpick-input" readonly />
+                                                    </div>
+
+                                                    <div class="libi-switchDates">
+                                                        <button class="pickerBtn month active">Month</button>
+                                                        <button class="pickerBtn day">Day</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="searchOptions__buttons">
+                                            <button class="button clear slim">Clear</button>
+                                            <button class="button slim apply">Apply</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ============================================================ -->
+
+                                <div class="input-column" id="searchDuration">
+                                    <svg role="img" aria-label="daytime" class="column-icon">
+                                        <use xlink:href="images/sprites/sprite.svg#daytime"></use>
+                                    </svg>
+                                    <span class="label">Duration</span>
+                                    <span class="selectedInputs">Any Length</span>
+
+                                    <div class="searchOptions">
+                                        <div class="mainSearch__headline">
+                                            DURATION
+                                            <button class="mainSearch__close">
+                                                <svg role="img" aria-label="close">
+                                                    <use xlink:href="images/sprites/sprite.svg#close"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="searchOptions__input">
+                                            <span>
+              <svg role="img" aria-label="daytime">
+                <use xlink:href="images/sprites/sprite.svg#daytime"></use>
+              </svg>
+            </span>
+                                            <input type="text" placeholder="Select a duration" readonly />
+                                        </div>
+
+                                        <div class="searchOptions__body">
+                                            <div class="searchOptions__tab active searchOptions__duration">
+                                                <h5>Cruise Durations</h5>
+
+                                                <div class="list"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="searchOptions__buttons">
+                                            <button class="button clear slim">Clear</button>
+                                            <button class="button slim apply">Apply</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="button-column">
+                                <button class="button cta" data-page="/search-react.html">SEARCH</button>
+                            </div>
+                        </div>
+
+                        <button class="startSearchButton">
+                            <svg role="img" title="search">
+                                <use xlink:href="images/sprites/sprite.svg#search"></use>
+                            </svg>
+                            Start a new cruise search
+                        </button>
+                    </div>
+                </div>
+
+                <!-- <div class="logos">
+    <a href="#"
+      ><img
+        src="images/nation-geographic-icon.png"
+        width="139"
+        height="42"
+        alt=""
+    /></a>
+
+    <a href="#"
+      ><img src="images/five-action.png" width="139" height="42" alt=""
+    /></a>
+
+    <a href="#"
+      ><img src="images/really.png" width="139" height="42" alt=""
+    /></a>
+  </div> -->
+            </div>
+
+        </section>
+
+
+        <section class="module" id="@@id">
+            <div class="container">
+                <div class="module__texts">
+                    <h2 class="center">LATEST CRUISE ONLY OFFERS</h2>
+
+                    <p class="module__description center">
+                        Need to be flexible? Our cruise only offers give you the freedom to plan
+                        your holiday your way and still secure an incredible cruise experience
+                        at sea.
+                    </p>
+                </div>
+            </div>
+
+            <div class="module__grid fourColumns container">
+                <div class="row">
+                    <div class="column">
+                        <!-- prettier-ignore -->
+                        <a href="#" class="offerCard alternative lazy" data-bg="images/package-6.jpg" data-product-id="1561">
+                            <span class="badge widgety">Cruise Only</span>
+
+                            <button class="wishlist-button">
+                                <svg role="img" aria-label="heart">
+                                    <use xlink:href="images/sprites/sprite.svg#heart" />
+                                </svg>
+                            </button>
+
+                            <div class="inner">
+                                <div class="content">
+                                    <h3>Ultimiate Japan & Cherry Blossom</h3>
+                                    <p class="price">
+                                        From <span>£4,599</span> pp<br /><span class="wasPrice"
+          >&nbsp;was <s>&#163;2,599</s> pp</span>
+                                    </p>
+
+                                    <div class="dates">
+                                        <p>
+                                            Norwegian Cruise Line<br />
+                                            <time>Jan 2024</time> | 18 Night<br />
+                                        </p>
+                                    </div>
+
+                                    <div class="extras">
+                                        <span class="button cta">View Cruise</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="column">
+                        <!-- prettier-ignore -->
+                        <a href="#" class="offerCard alternative lazy" data-bg="images/package-1.jpg" data-product-id="29719">
+                            <span class="badge widgety">Cruise Only</span>
+
+                            <button class="wishlist-button">
+                                <svg role="img" aria-label="heart">
+                                    <use xlink:href="images/sprites/sprite.svg#heart" />
+                                </svg>
+                            </button>
+
+                            <div class="inner">
+                                <div class="content">
+                                    <h3>Magical Hawaii</h3>
+                                    <p class="price">
+                                        From <span>£4,599</span> pp<br /><span class="wasPrice"
+          >&nbsp;was <s>&#163;2,599</s> pp</span>
+                                    </p>
+
+                                    <div class="dates">
+                                        <p>
+                                            Norwegian Cruise Line<br />
+                                            <time>Jan 2024</time> | 18 Night<br />
+                                        </p>
+                                    </div>
+
+                                    <div class="extras">
+                                        <span class="button cta">View Cruise</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="column">
+                        <!-- prettier-ignore -->
+                        <a href="#" class="offerCard alternative lazy" data-bg="images/package-3.jpg" data-product-id="@@cardid">
+                            <span class="badge widgety">Cruise Only</span>
+
+                            <button class="wishlist-button">
+                                <svg role="img" aria-label="heart">
+                                    <use xlink:href="images/sprites/sprite.svg#heart" />
+                                </svg>
+                            </button>
+
+                            <div class="inner">
+                                <div class="content">
+                                    <h3>Ultimate Carribbean Experience</h3>
+                                    <p class="price">
+                                        From <span>£4,599</span> pp<br /><span class="wasPrice"
+          >&nbsp;was <s>&#163;2,599</s> pp</span>
+                                    </p>
+
+                                    <div class="dates">
+                                        <p>
+                                            Norwegian Cruise Line<br />
+                                            <time>Jan 2024</time> | 18 Night<br />
+                                        </p>
+                                    </div>
+
+                                    <div class="extras">
+                                        <span class="button cta">View Cruise</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="column">
+                        <!-- prettier-ignore -->
+                        <a href="#" class="offerCard alternative lazy" data-bg="images/package-4.jpg" data-product-id="@@cardid">
+                            <span class="badge widgety">Cruise Only</span>
+
+                            <button class="wishlist-button">
+                                <svg role="img" aria-label="heart">
+                                    <use xlink:href="images/sprites/sprite.svg#heart" />
+                                </svg>
+                            </button>
+
+                            <div class="inner">
+                                <div class="content">
+                                    <h3>Maple Leaf Explorer: Niagara Falls, New York & New England</h3>
+                                    <p class="price">
+                                        From <span>£4,599</span> pp<br /><span class="wasPrice"
+          >&nbsp;was <s>&#163;2,599</s> pp</span>
+                                    </p>
+
+                                    <div class="dates">
+                                        <p>
+                                            Norwegian Cruise Line<br />
+                                            <time>Jan 2024</time> | 18 Night<br />
+                                        </p>
+                                    </div>
+
+                                    <div class="extras">
+                                        <span class="button cta">View Cruise</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="column">
+                        <!-- prettier-ignore -->
+                        <a href="#" class="offerCard alternative lazy" data-bg="images/package-5.jpg" data-product-id="@@cardid">
+                            <span class="badge widgety">Cruise Only</span>
+
+                            <button class="wishlist-button">
+                                <svg role="img" aria-label="heart">
+                                    <use xlink:href="images/sprites/sprite.svg#heart" />
+                                </svg>
+                            </button>
+
+                            <div class="inner">
+                                <div class="content">
+                                    <h3>Panama Canal From Miami To Los Angeles: Colombia & Mexico</h3>
+                                    <p class="price">
+                                        From <span>£4,599</span> pp<br /><span class="wasPrice"
+          >&nbsp;was <s>&#163;2,599</s> pp</span>
+                                    </p>
+
+                                    <div class="dates">
+                                        <p>
+                                            Norwegian Cruise Line<br />
+                                            <time>Jan 2024</time> | 18 Night<br />
+                                        </p>
+                                    </div>
+
+                                    <div class="extras">
+                                        <span class="button cta">View Cruise</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="column">
+                        <!-- prettier-ignore -->
+                        <a href="#" class="offerCard alternative lazy" data-bg="images/package-2.jpg" data-product-id="@@cardid">
+                            <span class="badge widgety">Cruise Only</span>
+
+                            <button class="wishlist-button">
+                                <svg role="img" aria-label="heart">
+                                    <use xlink:href="images/sprites/sprite.svg#heart" />
+                                </svg>
+                            </button>
+
+                            <div class="inner">
+                                <div class="content">
+                                    <h3>New York Skyscrapers & Caribbean Sunsets</h3>
+                                    <p class="price">
+                                        From <span>£4,599</span> pp<br /><span class="wasPrice"
+          >&nbsp;was <s>&#163;2,599</s> pp</span>
+                                    </p>
+
+                                    <div class="dates">
+                                        <p>
+                                            Norwegian Cruise Line<br />
+                                            <time>Jan 2024</time> | 18 Night<br />
+                                        </p>
+                                    </div>
+
+                                    <div class="extras">
+                                        <span class="button cta">View Cruise</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="column">
+                        <!-- prettier-ignore -->
+                        <a href="#" class="offerCard alternative lazy" data-bg="images/package-1.jpg" data-product-id="@@cardid">
+                            <span class="badge widgety">Cruise Only</span>
+
+                            <button class="wishlist-button">
+                                <svg role="img" aria-label="heart">
+                                    <use xlink:href="images/sprites/sprite.svg#heart" />
+                                </svg>
+                            </button>
+
+                            <div class="inner">
+                                <div class="content">
+                                    <h3>Australia & New Zealand</h3>
+                                    <p class="price">
+                                        From <span>£4,599</span> pp<br /><span class="wasPrice"
+          >&nbsp;was <s>&#163;2,599</s> pp</span>
+                                    </p>
+
+                                    <div class="dates">
+                                        <p>
+                                            Norwegian Cruise Line<br />
+                                            <time>Jan 2024</time> | 18 Night<br />
+                                        </p>
+                                    </div>
+
+                                    <div class="extras">
+                                        <span class="button cta">View Cruise</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="column">
+                        <!-- prettier-ignore -->
+                        <a href="#" class="offerCard alternative lazy" data-bg="images/package-6.jpg" data-product-id="@@cardid">
+                            <span class="badge widgety">Cruise Only</span>
+
+                            <button class="wishlist-button">
+                                <svg role="img" aria-label="heart">
+                                    <use xlink:href="images/sprites/sprite.svg#heart" />
+                                </svg>
+                            </button>
+
+                            <div class="inner">
+                                <div class="content">
+                                    <h3>Dazzling Dubai & Emirates Discovery</h3>
+                                    <p class="price">
+                                        From <span>£4,599</span> pp<br /><span class="wasPrice"
+          >&nbsp;was <s>&#163;2,599</s> pp</span>
+                                    </p>
+
+                                    <div class="dates">
+                                        <p>
+                                            Norwegian Cruise Line<br />
+                                            <time>Jan 2024</time> | 18 Night<br />
+                                        </p>
+                                    </div>
+
+                                    <div class="extras">
+                                        <span class="button cta">View Cruise</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="column">
+                        <!-- prettier-ignore -->
+                        <a href="#" class="offerCard alternative lazy" data-bg="images/package-6.jpg" data-product-id="@@cardid">
+                            <span class="badge widgety">Cruise Only</span>
+
+                            <button class="wishlist-button">
+                                <svg role="img" aria-label="heart">
+                                    <use xlink:href="images/sprites/sprite.svg#heart" />
+                                </svg>
+                            </button>
+
+                            <div class="inner">
+                                <div class="content">
+                                    <h3>Ultimiate Japan & Cherry Blossom</h3>
+                                    <p class="price">
+                                        From <span>£4,599</span> pp<br /><span class="wasPrice"
+          >&nbsp;was <s>&#163;2,599</s> pp</span>
+                                    </p>
+
+                                    <div class="dates">
+                                        <p>
+                                            Norwegian Cruise Line<br />
+                                            <time>Jan 2024</time> | 18 Night<br />
+                                        </p>
+                                    </div>
+
+                                    <div class="extras">
+                                        <span class="button cta">View Cruise</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="column">
+                        <!-- prettier-ignore -->
+                        <a href="#" class="offerCard alternative lazy" data-bg="images/package-1.jpg" data-product-id="@@cardid">
+                            <span class="badge widgety">Cruise Only</span>
+
+                            <button class="wishlist-button">
+                                <svg role="img" aria-label="heart">
+                                    <use xlink:href="images/sprites/sprite.svg#heart" />
+                                </svg>
+                            </button>
+
+                            <div class="inner">
+                                <div class="content">
+                                    <h3>Magical Hawaii</h3>
+                                    <p class="price">
+                                        From <span>£4,599</span> pp<br /><span class="wasPrice"
+          >&nbsp;was <s>&#163;2,599</s> pp</span>
+                                    </p>
+
+                                    <div class="dates">
+                                        <p>
+                                            Norwegian Cruise Line<br />
+                                            <time>Jan 2024</time> | 18 Night<br />
+                                        </p>
+                                    </div>
+
+                                    <div class="extras">
+                                        <span class="button cta">View Cruise</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="column">
+                        <!-- prettier-ignore -->
+                        <a href="#" class="offerCard alternative lazy" data-bg="images/package-3.jpg" data-product-id="@@cardid">
+                            <span class="badge widgety">Cruise Only</span>
+
+                            <button class="wishlist-button">
+                                <svg role="img" aria-label="heart">
+                                    <use xlink:href="images/sprites/sprite.svg#heart" />
+                                </svg>
+                            </button>
+
+                            <div class="inner">
+                                <div class="content">
+                                    <h3>Ultimate Carribbean Experience</h3>
+                                    <p class="price">
+                                        From <span>£4,599</span> pp<br /><span class="wasPrice"
+          >&nbsp;was <s>&#163;2,599</s> pp</span>
+                                    </p>
+
+                                    <div class="dates">
+                                        <p>
+                                            Norwegian Cruise Line<br />
+                                            <time>Jan 2024</time> | 18 Night<br />
+                                        </p>
+                                    </div>
+
+                                    <div class="extras">
+                                        <span class="button cta">View Cruise</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="column">
+                        <!-- prettier-ignore -->
+                        <a href="#" class="offerCard alternative lazy" data-bg="images/package-4.jpg" data-product-id="@@cardid">
+                            <span class="badge widgety">Cruise Only</span>
+
+                            <button class="wishlist-button">
+                                <svg role="img" aria-label="heart">
+                                    <use xlink:href="images/sprites/sprite.svg#heart" />
+                                </svg>
+                            </button>
+
+                            <div class="inner">
+                                <div class="content">
+                                    <h3>Maple Leaf Explorer: Niagara Falls, New York & New England</h3>
+                                    <p class="price">
+                                        From <span>£4,599</span> pp<br /><span class="wasPrice"
+          >&nbsp;was <s>&#163;2,599</s> pp</span>
+                                    </p>
+
+                                    <div class="dates">
+                                        <p>
+                                            Norwegian Cruise Line<br />
+                                            <time>Jan 2024</time> | 18 Night<br />
+                                        </p>
+                                    </div>
+
+                                    <div class="extras">
+                                        <span class="button cta">View Cruise</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="module__buttons">
+                    <a href="#" class="button">VIEW MORE CRUISE ONLY OFFERS</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="module cruisePartners">
+            <div class="container">
+                <div class="module__texts center">
+                    <h2>OUR CRUISE PARTNERS</h2>
+
+                    <p class="module__description">
+                        At LoveitBookit we work with some of the best cruise companies and put
+                        together bespoke cruise packages containing amazing drinks and dining
+                        packages
+                    </p>
+                </div>
+
+                <div class="owl-carousel owl-theme cruisePartners__carousel lazy" data-lazy-function="cruisePartnersCarousel">
+                    <a href="/cruise-lines/azamara">
+                        <img class="owl-lazy" data-src="images/logos/azamara.jpg" alt="azamara" />
+                    </a>
+
+                    <a href="/cruise-lines/carnival-cruise-line">
+                        <img class="owl-lazy" data-src="images/logos/carnival-cruise-line.jpg" alt="carnival-cruise-line" />
+                    </a>
+
+                    <a href="/cruise-lines/celebrity-cruises">
+                        <img class="owl-lazy" data-src="images/logos/celebrity-cruises.jpg" alt="celebrity-cruises" />
+                    </a>
+
+                    <a href="/cruise-lines/cunard-line">
+                        <img class="owl-lazy" data-src="images/logos/cunard-line.jpg" alt="cunard-line" />
+                    </a>
+
+                    <a href="/cruise-lines/disney-cruise-line">
+                        <img class="owl-lazy" data-src="images/logos/disney-cruise-line.jpg" alt="disney-cruise-line" />
+                    </a>
+
+                    <a href="/cruise-lines/explora-journeys">
+                        <img class="owl-lazy" data-src="images/logos/explora-journeys.jpg" alt="explora-journeys" />
+                    </a>
+
+                    <a href="/cruise-lines/holland-america-line">
+                        <img class="owl-lazy" data-src="images/logos/holland-america-line.jpg" alt="holland-america-line" />
+                    </a>
+
+                    <a href="/cruise-lines/msc-cruises">
+                        <img class="owl-lazy" data-src="images/logos/msc-cruises.jpg" alt="msc-cruises" />
+                    </a>
+
+                    <a href="/cruise-lines/norwegian-cruise-line">
+                        <img class="owl-lazy" data-src="images/logos/norwegian-cruise-line.jpg" alt="norwegian-cruise-line" />
+                    </a>
+
+                    <a href="/cruise-lines/oceania-cruises">
+                        <img class="owl-lazy" data-src="images/logos/oceania-cruises.jpg" alt="oceania-cruises" />
+                    </a>
+
+                    <a href="/cruise-lines/po-cruises">
+                        <img class="owl-lazy" data-src="images/logos/po-cruises.jpg" alt="po-cruises" />
+                    </a>
+
+                    <a href="/cruise-lines/princess-cruises">
+                        <img class="owl-lazy" data-src="images/logos/princess-cruises.jpg" alt="princess-cruises" />
+                    </a>
+
+                    <a href="/cruise-lines/regent-seven-seas-cruises">
+                        <img class="owl-lazy" data-src="images/logos/regent-seven-seas-cruises.jpg" alt="regent-seven-seas-cruises" />
+                    </a>
+
+                    <a href="/cruise-lines/royal-caribbean-international">
+                        <img class="owl-lazy" data-src="images/logos/royal-caribbean-international.jpg" alt="royal-caribbean-international" />
+                    </a>
+
+                    <a href="/cruise-lines/seabourn-cruise-line">
+                        <img class="owl-lazy" data-src="images/logos/seabourn-cruise-line.jpg" alt="seabourn-cruise-line" />
+                    </a>
+
+                    <a href="/cruise-lines/silversea">
+                        <img class="owl-lazy" data-src="images/logos/silversea.jpg" alt="silversea" />
+                    </a>
+                </div>
+
+                <div class="module__buttons">
+                    <a href="/cruise-lines" class="button">VIEW ALL OPERATORS</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="module rating">
+            <div class="container">
+                <h2 class="center">WHY OUR CUSTOMERS LOVE US</h2>
+
+                <div id="feefo-service-review-carousel-widgetId" class="feefo-review-carousel-widget-service"></div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+    <!-- prettier-ignore -->
+    <div id="enquireFormModal" class="modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal__cover"></div>
+        <div class="modal__box">
+            <button class="modal__close" aria-label="Close">
+                <svg role="img" aria-label="close">
+                    <use xlink:href="images/sprites/sprite.svg#close-circle-solid" />
+                </svg>
+            </button>
+            <div class="modal__content">
+                <div class="richtext inquiryForm__success hidden">
+                    <h2>Your enquiry<br />has been sent</h2>
+
+                    <p>
+                        Thank you for submitting your holiday enquiry. we are currently
+                        experiencing a high volume of email enquiries and are working through
+                        them as quickly as possible. To speak to us instantly, we recoomend
+                        calling our Cruise Specialists on
+                        <a href="tel:0203 393 1003">0203 393 1003</a> (option 1), where a
+                        member of our team will be more than happy to help you over the phone.
+                        Your enquiry is important to us and we look forward to speaking to you
+                        soon.
+                    </p>
+                </div>
+
+                <form class="inquiryForm" id="enquiryForm">
+                    <div class="formText">
+                        <h2 class="center">Online enquiry</h2>
+                        <p>
+                            Our team of cruise experts are here to help you organise your dream
+                            cruise holiday. Complete the from below or talk to one of our team
+                            on
+                            <a href="tel:0203 393 1003" class="phone"><strong>0203 393 1003</strong></a>
+                        </p>
+                    </div>
+
+                    <div class="formTwoColumn">
+                        <div class="input-group">
+                            <input type="text" name="name" class="input" placeholder="Name *" required data-rule-requireLastName="true" />
+                        </div>
+
+                        <div class="input-group">
+                            <input type="email" name="email" class="input" placeholder="Email Address *" required />
+                        </div>
+
+                        <div class="input-group">
+                            <input type="number" name="phone" class="input" placeholder="Phone Number *" required />
+                        </div>
+
+                        <div class="input-group confirmPhone">
+                            <input type="number" name="phoneConfirm" class="input" placeholder="Confirm Phone Number" />
+                        </div>
+
+                        <div class="input-group">
+                            <div class="select-input">
+                                <select name="callbacktime">
+                                    <option value="Unspecified" selected>Call Back Time</option>
+                                    <option value="Morning">Morning</option>
+                                    <option value="Afternoon">Afternoon</option>
+                                    <option value="Early Evening">Early Evening</option>
+                                    <option value="As soon as possible">As soon as possible</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group full">
+                            <textarea class="textarea" name="enquiry" placeholder="Your Inquiry * &#13;&#10;&#13;&#10;Tell us who is going with you, what airport you'd like to fly from and any other details we may find useful, such as if it's a special occasion." required></textarea>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="select-input">
+                                <select name="cabintype">
+                                    <option value="Unspecified" selected>Cabin type</option>
+                                    <option value="interior">Interior</option>
+                                    <option value="oceanview">Oceanview</option>
+                                    <option value="balcony-bespoke">Balcony</option>
+                                    <option value="suite-bespoke">Suite</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group full">
+                            <label class="checkbox">
+                                <input type="checkbox" name="subscribe" value="Yes" checked />
+                                <span>
+                Would you like to receive exclusive deals and discounts from our
+                mailing list?
+              </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="submit" class="button cta">ENQUIRE NOW</button>
+                    </div>
+
+                    <p class="recaptchaterms">
+                        This site is protected by reCAPTCHA and the Google
+                        <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+                        <a href="https://policies.google.com/terms">Terms of Service</a>
+                        apply.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="shortlistModal" class="modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal__cover"></div>
+        <div class="modal__box">
+            <button class="modal__close" aria-label="Close">
+                <svg role="img" aria-label="close">
+                    <use xlink:href="images/sprites/sprite.svg#close-circle-solid" />
+                </svg>
+            </button>
+            <div class="modal__content nopadbot">
+                <div class="richtext">
+                    <h3 class="shortlist-title">
+                        YOUR SHORTLIST <span class="shortlist-count"><span>0</span>/10</span>
+                    </h3>
+
+                    <div class="sl-text"></div>
+                </div>
+
+                <div class="shortlist-cards"></div>
+
+                <div class="shortlist-clear">
+                    <button class="button">Remove all</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="newsletterSignup">
+        <div class="container">
+            <div class="newsletterSignup__text">
+                <h4>LET US INSPIRE YOU</h4>
+                <p>Get the hottest deals and latest bespoke cruises</p>
+            </div>
+
+            <form id="signupForm" action="https://loveitbookit.us3.list-manage.com/subscribe/post?u=10ce68ade745247beb265ec13&id=69e81212f9" class="newsletterSignup__form newsletter-form">
+                <div style="position: absolute; left: -5000px" aria-hidden="true">
+                    <input type="text" name="b_10ce68ade745247beb265ec13_69e81212f9" tabindex="-1" value="" />
+                </div>
+
+                <div style="position: absolute; left: -5000px" aria-hidden="true">
+                    <input type="text" name="confirmEmail" tabindex="-1" value="" />
+                </div>
+
+                <input type="text" class="input" name="fname" id="newsletter-first-name" value="" placeholder="First name" />
+                <input type="text" class="input" name="lname" id="newsletter-last-name" value="" placeholder="Last name" />
+                <input type="email" class="input" name="email" id="newsletter-email" value="" placeholder="Your e-mail address" required />
+                <button type="submit" class="button" name="subscribe" id="newsletter-button">
+                    Sign up
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="mainFooter">
+        <div class="mainFooter__inner">
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <h4>Inspiration</h4>
+                        <ul>
+                            <li><a href="#">TV Deals</a></li>
+                            <li><a href="#">Bespoke Cruises</a></li>
+                            <li><a href="#">2024 Cruises</a></li>
+                            <li><a href="#">2025 Cruises</a></li>
+                            <li><a href="#">Cruise Destinations</a></li>
+                            <li><a href="#">Cruise Ships</a></li>
+                            <li><a href="#">Cruise Operators</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="column">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Customer Reviews</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="column">
+                        <h4>Contact Us</h4>
+                        <p>
+                            <strong>LoveitBookit</strong><br />First Floor Builder House.<br />2
+            Mayors road, Altrincham<br />Chesire, WA15 9RP
+                        </p>
+                        <p>
+                            <a href="tel:0203 393 1003" class="withIcon phone">
+                                <svg role="img" aria-label="phone">
+                                    <use xlink:href="images/sprites/sprite.svg#phone" />
+                                </svg>
+                                <span>0203 393 1003</span>
+                            </a>
+                            <br />
+                            <a href="mailto:cruise@loveitbookit.com" class="withIcon">
+                                <svg role="img" aria-label="mail">
+                                    <use xlink:href="images/sprites/sprite.svg#mail" />
+                                </svg>
+                                <span>cruise@loveitbookit.com</span>
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="column">
+                        <h4>Follow us</h4>
+                        <ul>
+                            <li>
+                                <a href="#" class="withIcon">
+                                    <svg role="img" aria-label="facebook">
+                                        <use xlink:href="images/sprites/sprite.svg#facebook" />
+                                    </svg>
+                                    <span>Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="withIcon">
+                                    <svg role="img" aria-label="twitter">
+                                        <use xlink:href="images/sprites/sprite.svg#twitter" />
+                                    </svg>
+                                    <span>Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="withIcon">
+                                    <svg role="img" aria-label="youtube">
+                                        <use xlink:href="images/sprites/sprite.svg#youtube" />
+                                    </svg>
+                                    <span>YouTube</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="withIcon">
+                                    <svg role="img" aria-label="instagram">
+                                        <use xlink:href="images/sprites/sprite.svg#instagram" />
+                                    </svg>
+
+                                    <span>Instagram</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="withIcon">
+                                    <svg role="img" aria-label="tiktok">
+                                        <use xlink:href="images/sprites/sprite.svg#tiktok" />
+                                    </svg>
+                                    <span>Tik Tok</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="column third">
+                        <img data-src="images/footer-image.png" alt="" class="lazy logoimage" />
+                    </div>
+
+                    <div class="column noMargin">
+                        <img data-src="images/platinum-trusted-award-landscape.png" alt="" class="lazy feefologo" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mainFooter__bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <p>
+                            &copy; LoveitBookit, Registered No. 07964069<br />TTA: T7560 ATOL:
+            Q0161
+                        </p>
+                    </div>
+
+                    <div class="column">
+                        <img data-src="images/payments3.png" alt="Accepted payments" class="lazy payments" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="coverpage"></div>
+
+    <!-- rating scripts. -->
+    <!-- <script defer type="text/javascript" src="https://api.feefo.com/api/javascript/loveitbookit" fetchpriority="low"></script> -->
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfO_eIrAAAAAHbbQQTYocEGcCYndPZyq2l_ES0H"></script>
+
+    <script type="text/javascript">
+        (function() {
+            var aA = document.querySelector('.startSearchButton');
+            var bB = document.querySelector('#closeMainSearchButton');
+            var cC = document.querySelector('.mainSearch__wrapper');
+            var dD = document.querySelector('body');
+            if (aA) {
+                aA.addEventListener('click', function() {
+                    cC.classList.add('active');
+                    dD.classList.add('modal-open');
+                });
+            }
+            if (bB) {
+                bB.addEventListener('click', function() {
+                    cC.classList.remove('active');
+                    if (!document.querySelector('.modal.active')) {
+                        setTimeout(function() {
+                            dD.classList.remove('modal-open');
+                        }, 300);
+                    }
+                });
+            }
+        })();
+    </script>
+
+    <script src="https://media.loveitbookit.com/media/wi2owz54/datepickermin.js" fetchpriority="low" defer></script>
+
+    <!-- Include scripts. -->
+    <script src="/js/bundle.min.js" fetchpriority="low" defer></script>
+    <!-- <script src="/js/qoute-bundle.min.js" fetchpriority="low" defer></script> -->
+
+    <!-- <script src="/js/itinerary-bundle.min.js" fetchpriority="low" defer></script> -->
+
+    <!-- <script defer src="https://media.loveitbookit.com/media/obkl3iyr/nannogallerymin.js" fetchpriority="low"></script> -->
+
+    <!-- <script src="https://media.loveitbookit.com/media/pmvfp5o4/nannogallerymin.js" fetchpriority="low" defer></script> -->
+    <!-- <script defer src="https://media.loveitbookit.com/media/rxmltjrl/dependenciesmin.js" fetchpriority="low"></script> -->
+
+    <!-- https://www.loveitbookit.com/media/rxmltjrl/dependenciesmin.js -->
+    <!-- <script src="/js/search-bundle.min.js" fetchpriority="low" defer></script>
+        
+        <script src="/js/booking-bundle.min.js" fetchpriority="low" defer></script>
+
+        <script src="/js/manage-booking-bundle.min.js" fetchpriority="low" defer></script> -->
+
+
+</body>
+
+</html>
