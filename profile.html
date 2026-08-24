@@ -57,7 +57,7 @@
 
 </head>
 
-<body class="">
+<body class="profilePage">
     <div class="mainHeader__burger burger" role="button"><span></span></div>
     <div class="topMenu">
         <div class="topMenu__left">
@@ -279,18 +279,46 @@
 
     <main class="main">
 
-        <section class="profile_hero">
-            <img src="https://media.loveitbookit.com/media/nfiht5iv/shutterstock_570470086-aruba.jpeg?width=1920&height=700" width="1920" height="700" alt="Andy Cookson" />
-            <div class="container">
-                <div class="breadcrumb">
-                    <div class="breadcrumb__address">
-                        <a href="https://www.loveitbookit.com/">Home</a>
-                        <a href="https://www.loveitbookit.com/cruise-lines">Meet the team</a>
-                        <span>Andy Cookson</span>
-                    </div>
+        <section class="hero">
+            <div class="hero__item">
+                <div class="hero__bg">
+                    <img srcset="
+          https://media.loveitbookit.com/media/nfiht5iv/shutterstock_570470086-aruba.jpeg?width=430&height=1000  768w,
+          https://media.loveitbookit.com/media/nfiht5iv/shutterstock_570470086-aruba.jpeg?width=1920&height=700 1000w
+        " src="https://media.loveitbookit.com/media/nfiht5iv/shutterstock_570470086-aruba.jpeg?width=430&height=1000" class="bgimage" width="1920" height="700" alt="" fetchpriority="high" />
+                </div>
+
+                <div class="container">
+                    <div class="hero__content"></div>
+                </div>
+            </div>
+
+            <div class="breadcrumb">
+                <div class="breadcrumb__address">
+                    <a href="#">Home</a>
+                    <a href="#">Meet the team</a>
+                    <span>Andy Cookson</span>
                 </div>
             </div>
         </section>
+
+        <!-- <section class="profile_hero">
+  <img
+    src="https://media.loveitbookit.com/media/nfiht5iv/shutterstock_570470086-aruba.jpeg?width=1920&height=700"
+    width="1920"
+    height="700"
+    alt="Andy Cookson"
+  />
+  <div class="container">
+    <div class="breadcrumb">
+      <div class="breadcrumb__address">
+        <a href="https://www.loveitbookit.com/">Home</a>
+        <a href="https://www.loveitbookit.com/cruise-lines">Meet the team</a>
+        <span>Andy Cookson</span>
+      </div>
+    </div>
+  </div>
+</section> -->
 
         <section class="module profile">
             <div class="container">
@@ -424,9 +452,12 @@
                             <h3>Cruise lines</h3>
                         </div>
 
-                        <ul>
+                        <ul class="seemorelist">
                             <li><a href="#">P&O Cruises</a></li>
                             <li><a href="#">Celebrity Cruises</a></li>
+                            <li><a href="#">Cunard</a></li>
+                            <li><a href="#">MSC Cruises</a></li>
+                            <li><a href="#">Royal Caribbean</a></li>
                             <li><a href="#">Cunard</a></li>
                             <li><a href="#">MSC Cruises</a></li>
                             <li><a href="#">Royal Caribbean</a></li>
@@ -443,7 +474,13 @@
                             <h3>Ships</h3>
                         </div>
 
-                        <ul>
+                        <ul class="seemorelist">
+                            <li><a href="#">Azura</a></li>
+                            <li><a href="#">Britannia</a></li>
+                            <li><a href="#">Celebrity Solstice</a></li>
+                            <li><a href="#">Queen Victoria</a></li>
+                            <li><a href="#">MSC Virtuosa</a></li>
+                            <li><a href="#">Anthem of the Seas</a></li>
                             <li><a href="#">Azura</a></li>
                             <li><a href="#">Britannia</a></li>
                             <li><a href="#">Celebrity Solstice</a></li>
@@ -463,7 +500,13 @@
                             <h3>Destinations</h3>
                         </div>
 
-                        <ul>
+                        <ul class="seemorelist">
+                            <li><a href="#">Western Mediterranean</a></li>
+                            <li><a href="#">Eastern Mediterranean</a></li>
+                            <li><a href="#">Norwegian Fjords</a></li>
+                            <li><a href="#">Canary Islands</a></li>
+                            <li><a href="#">Caribbean</a></li>
+                            <li><a href="#">Australia & New Zealand</a></li>
                             <li><a href="#">Western Mediterranean</a></li>
                             <li><a href="#">Eastern Mediterranean</a></li>
                             <li><a href="#">Norwegian Fjords</a></li>

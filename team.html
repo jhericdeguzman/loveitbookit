@@ -57,7 +57,7 @@
 
 </head>
 
-<body class="">
+<body class="teamPage">
     <div class="mainHeader__burger burger" role="button"><span></span></div>
     <div class="topMenu">
         <div class="topMenu__left">
@@ -281,38 +281,42 @@
 
         <section class="hero">
             <div class="hero__item">
-                <div class="hero__bg">
-                    <img srcset="
-            https://media.loveitbookit.com/media/1f4dvzil/team-photo-3.png?width=430&height=1000&v=1dc732b68846f90  768w,
-            https://media.loveitbookit.com/media/1f4dvzil/team-photo-3.png?width=1920&height=700&v=1dc732b68846f90 1000w
-          " src="https://media.loveitbookit.com/media/1f4dvzil/team-photo-3.png?width=430&height=1000&v=1dc732b68846f90" class="bgimage" width="1920" height="700" alt="" fetchpriority="high" />
-                </div>
+                <div class="hero__bg"></div>
 
                 <div class="container">
                     <div class="hero__content">
                         <h1>Meet the team</h1>
-                        <p>The people behind LoveitBookit — from first enquiry to the day you sail.<br />Find the right team for what
-          you need.</p>
+                        <p>The people behind LoveitBookit — from first enquiry to the day you sail. Find the right team for what
+                            you need.</p>
                     </div>
+                </div>
+            </div>
+
+            <div class="breadcrumb">
+                <div class="breadcrumb__address">
+                    <a href="#">Home</a>
+                    <span>Meet the team</span>
                 </div>
             </div>
         </section>
 
-        <section class="module grayBg">
-            <!-- <div class="container">
-    <div class="module__texts center">
-      <h2>Meet the team</h2>
-
-      <p>
-        The people behind LoveitBookit — from first enquiry to the day you sail.<br />Find the right team for what
-          you need.
-      </p>
-    </div>
-  </div> -->
+        <section class="module grayBg profile_team">
+            <div class="container profile_filter">
+                <div class="wrapper">
+                    <span>DEPARTMENT</span>
+                    <ul>
+                        <li><button class="button slim" data-filter="all">All</button></li>
+                        <li><button class="button black hollow slim" data-filter="Sales">Sales</button></li>
+                        <li><button class="button black hollow slim" data-filter="Marketing">Marketing</button></li>
+                        <li><button class="button black hollow slim" data-filter="Customer Services">Customer Services</button></li>
+                        <li><button class="button black hollow slim" data-filter="Operations">Operations</button></li>
+                    </ul>
+                </div>
+            </div>
 
             <div class="container module__grid">
                 <div class="row">
-                    <div class="column">
+                    <div class="column" data-profile-filter="Sales">
                         <div class="cruiseLineCard profile">
                             <figure>
                                 <img class="lazy" data-src="images/norwegian-prima-ship.jpg" alt="" />
@@ -324,7 +328,7 @@
 
                             <div class="texts">
                                 <h3>Andy Cookson</h3>
-                                <p class="position">Sales manager</p>
+                                <p class="position">Sales</p>
 
                                 <p>
                                     Leads the sales team and still books cruises himself — his favourite is
@@ -337,7 +341,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column">
+
+                    <div class="column" data-profile-filter="Marketing">
                         <div class="cruiseLineCard profile">
                             <figure>
                                 <img class="lazy" data-src="images/norwegian-prima-ship.jpg" alt="" />
@@ -349,7 +354,7 @@
 
                             <div class="texts">
                                 <h3>Andy Cookson</h3>
-                                <p class="position">Sales manager</p>
+                                <p class="position">Marketing</p>
 
                                 <p>
                                     Leads the sales team and still books cruises himself — his favourite is
@@ -362,7 +367,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column">
+
+                    <div class="column" data-profile-filter="Customer Services">
                         <div class="cruiseLineCard profile">
                             <figure>
                                 <img class="lazy" data-src="images/norwegian-prima-ship.jpg" alt="" />
@@ -374,7 +380,7 @@
 
                             <div class="texts">
                                 <h3>Andy Cookson</h3>
-                                <p class="position">Sales manager</p>
+                                <p class="position">Customer Services</p>
 
                                 <p>
                                     Leads the sales team and still books cruises himself — his favourite is
@@ -387,7 +393,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column">
+
+                    <div class="column" data-profile-filter="Operations">
                         <div class="cruiseLineCard profile">
                             <figure>
                                 <img class="lazy" data-src="images/norwegian-prima-ship.jpg" alt="" />
@@ -399,7 +406,33 @@
 
                             <div class="texts">
                                 <h3>Andy Cookson</h3>
-                                <p class="position">Sales manager</p>
+                                <p class="position">Operations</p>
+
+                                <p>
+                                    Leads the sales team and still books cruises himself — his favourite is
+                                    P&O's Azura.
+                                </p>
+                            </div>
+
+                            <div class="cruiseline__actions">
+                                <a href="profile.html" class="button hollow slim">View profile</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column" data-profile-filter="Sales,Customer Services">
+                        <div class="cruiseLineCard profile">
+                            <figure>
+                                <img class="lazy" data-src="images/norwegian-prima-ship.jpg" alt="" />
+                            </figure>
+
+                            <div class="picture">
+                                <img class="lazy" data-src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=200&h=200&fit=crop&crop=faces" alt="" />
+                            </div>
+
+                            <div class="texts">
+                                <h3>Andy Cookson</h3>
+                                <p class="position">Sales</p>
 
                                 <p>
                                     Leads the sales team and still books cruises himself — his favourite is
