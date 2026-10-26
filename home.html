@@ -37,11 +37,15 @@
     <link rel="preload" as="style" href="/css/main.css">
     <link rel="stylesheet" href="/css/main.css">
 
-    <!-- <link rel="stylesheet" href="/css/itinerary.css">
-        
-        <link rel="stylesheet" href="/css/booking-journey.css"> 
+    <link rel="stylesheet" href="/css/itinerary.css">
 
-        <link rel="stylesheet" href="/css/quote.css"> -->
+
+
+    <link rel="stylesheet" href="/css/booking-journey.css">
+
+
+
+    <link rel="stylesheet" href="/css/quote.css">
 
     <link rel="stylesheet" href="/css/mmb.css">
 
@@ -53,12 +57,24 @@
 
 </head>
 
-<body class="homepage">
+<body class="homepage blackFriday">
     <div class="mainHeader__burger burger" role="button"><span></span></div>
     <div class="topMenu">
         <div class="topMenu__left">
             <p>Fully ATOL Protected</p>
         </div>
+
+        <p class="bf_msg">
+            <span class="desktop">
+      <strong>LOVEITBOOKIT'S BETTER THAN BLACK FRIDAY SAVINGS!</strong>
+      EXTRAORDINARY HOLIDAYS. EXCEPTIONAL PRICES, ALWAYS. BOOK NOW
+    </span>
+
+            <span class="mobile">
+      <strong>BETTER THAN BLACK FRIDAY SAVINGS!</strong>
+      EXTRAORDINARY HOLIDAYS. EXCEPTIONAL PRICES, ALWAYS
+    </span>
+        </p>
 
         <a href="#feefo-service-review-carousel-widgetId" class="siteRating" title="4.9/5 on Feefo from over 1,000 reviews">
             <svg role="img" aria-label="star">
@@ -121,8 +137,32 @@
                 0203 393 1003
             </a>
 
+            <button class="phoneButton">
+                <svg role="img" aria-label="phone">
+                    <use xlink:href="images/sprites/sprite.svg#phone" />
+                </svg>
+            </button>
+
             <div class="headerContact">
+                <button class="closeButton">
+                    <svg role="img" aria-label="close">
+                        <use xlink:href="images/sprites/sprite.svg#close" />
+                    </svg>
+                </button>
+
                 <p class="h4">Opening times</p>
+
+                <p class="callState">
+                    <span>We're</span>
+                    <span class="badgeOc">Closed</span>
+
+                    <a href="tel:0203 393 1003">
+                        <svg role="img" aria-label="phone">
+                            <use xlink:href="images/sprites/sprite.svg#phone" />
+                        </svg>
+                        0203 393 1003
+                    </a>
+                </p>
 
                 <dl>
                     <dt>Sales</dt>
@@ -137,42 +177,6 @@
                     Enquire now
                 </button>
                 <a href="#" class="button slim secondary">FAQ's</a>
-            </div>
-        </div>
-
-        <div class="mainHeader__contactCompact">
-            <button class="phoneButton">
-                <svg role="img" aria-label="phone" class="phone">
-                    <use xlink:href="images/sprites/sprite.svg#phone" />
-                </svg>
-            </button>
-
-            <div class="headerContactCompact">
-                <button class="closeButton">
-                    <svg role="img" aria-label="close" class="close">
-                        <use xlink:href="images/sprites/sprite.svg#close" />
-                    </svg>
-                </button>
-
-                <p class="h4">LET US INSPIRE YOU..</p>
-                <p>Speak to one of our experts</p>
-
-                <a href="tel:0203 393 1003">
-                    <svg role="img" aria-label="phone" class="icon">
-                        <use xlink:href="images/sprites/sprite.svg#phone" />
-                    </svg>
-                    <span>CALL US</span>
-                    <strong>0203 393 1003</strong>
-                    <div class="badgeOc">Closed</div>
-                </a>
-
-                <button class="enquire" data-modal-target="#enquireFormModal">
-                    <svg role="img" aria-label="mail" class="icon">
-                        <use xlink:href="images/sprites/sprite.svg#mail" />
-                    </svg>
-                    <span>CONTACT US</span>
-                    <strong>ENQUIRE ONLINE</strong>
-                </button>
             </div>
         </div>
 
@@ -347,7 +351,9 @@
 
                 <div class="container">
                     <div class="hero__content">
-                        <h1>Your perfect cruise awaits...</h1>
+                        <!-- <h1>Your perfect cruise awaits...</h1> -->
+                        <h1>BETTER THAN BLACK FRIDAY</h1>
+                        <h2>EXTRA ORDINARY HOLIDAYS. EXCEPTIONAL PRICES, ALWAYS.</h2>
                     </div>
                 </div>
             </div>
@@ -977,6 +983,7 @@
 
                 <div class="switcher">
                     <div class="switch">
+                        <div class="new">New!</div>
                         <button class="option active" data-eps="1">Latest Episode: 243</button>
                         <button class="option" data-eps="2">Previous Episode: 242</button>
                         <span class="slider"></span>
@@ -1007,13 +1014,15 @@
                     </div>
                 </div>
 
-                <p class="text">
-                    Join Dan & Sam on Cruise TV and watch our top itineraries come to life on
-                    your screen. With our latest TV cruise packages, you’ll find much more
-                    than just your traditional cruise deals — we go that extra mile to find
-                    niche hotels, exciting excursions and unique experiences, turning your
-                    holiday into the one that you’ve always dreamed of.
-                </p>
+                <div class="switchFade marginTop">
+                    <p class="text switchItem active">
+                        The latest deals have landed! Escape to the Canaries and Portugal with MSC Cruises, feel the adrenaline of the Miami Grand Prix and soak up the Caribbean sunshine with Norwegian Cruise Line or experience the wonders of Australia, including Ayers Rock, before sailing with Celebrity Cruises. Plus, even more unmissable offers.
+                    </p>
+
+                    <p class="text switchItem">
+                        Dan &amp; Sam return with a fresh wave of incredible deals! Choose from a sun-soaked Mediterranean voyage, a Rocky Mountaineer adventure paired with an Alaska cruise, a Caribbean escape with Princess Cruises, or an exclusive Thailand tour combined with a luxury Explora Journeys voyage through Asia.
+                    </p>
+                </div>
 
                 <div class="logos">
                     <figure>
@@ -3446,7 +3455,8 @@
 
     <!-- Include scripts. -->
     <script src="/js/bundle.min.js" fetchpriority="low" defer></script>
-    <!-- <script src="/js/qoute-bundle.min.js" fetchpriority="low" defer></script>
+    <script src="/js/qoute-bundle.min.js" fetchpriority="low" defer></script>
+    <!-- 
 
         <script src="/js/itinerary-bundle.min.js" fetchpriority="low" defer></script> -->
 
@@ -3458,11 +3468,13 @@
     <!-- https://www.loveitbookit.com/media/rxmltjrl/dependenciesmin.js -->
     <!-- <script src="/js/search-bundle.min.js" fetchpriority="low" defer></script>
         
-        <script src="/js/booking-bundle.min.js" fetchpriority="low" defer></script>
+        
 
         <script src="/js/manage-booking-bundle.min.js" fetchpriority="low" defer></script> -->
 
     <script src="/js/mmb-bundle.min.js" fetchpriority="low" defer></script>
+
+    <script src="/js/booking-bundle.min.js" fetchpriority="low" defer></script>
 
 
 </body>
